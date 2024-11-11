@@ -10,8 +10,10 @@
 <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
-    <main class=" justify-center">
-        <div class="mockup-phone border-none">
+    <main class="flex justify-center">
+
+        <!-- cash in -->
+        <div class="hidden mockup-phone border-none">
             <div class="camera"></div>
             <div class="display">
               <div class="artboard artboard-demo phone-1">
@@ -54,8 +56,53 @@
             </div>
           </div>
 
+        <!-- cash Out -->
+        <div class="mockup-phone border-none">
+            <div class="camera"></div>
+            <div class="display">
+              <div class="artboard artboard-demo phone-1">
+                <button class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg my-5">
+                    <div class="flex flex-col items-start">
+                        <h1 id="current-main-balance" class="text-4xl">9000</h1>
+                    <p class="font-extralight text-gray-500">Available balance</p>
+                    </div>
+                </button>
+                <div>
+                    <button class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg">Add Money</button>
+                    <button class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg">Cash Out</button>
+                </div>
+                 
+                <div class="divider"></div>
 
-          <script src="JS/home.js"></script>
+                <div>
+                    <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+                        <form class="card-body">
+                          <div class="form-control">
+                            <label class="label">
+                              <span class="label-text">Amount</span>
+                            </label>
+                            <input id="cash-out-amount" type="number" placeholder="enter amount" class="input input-bordered" autocomplete="off" required />
+                          </div>
+                          <div class="form-control">
+                            <label class="label">
+                              <span class="label-text">Pin</span>
+                            </label>
+                            <input id="cash-out-pin-num" type="password" placeholder="enter your pin" class="input input-bordered" required />
+                            
+                          </div>
+                          <div class="form-control mt-6">
+                            <button id="cash-out-button" class="btn btn-primary">Cash Out</button>
+                          </div>
+                        </form>
+                      </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <script src="JS/addMoney.js"></script>
+          <script src="JS/cashOut.js"></script>
     </main>
 </body>
 </html>

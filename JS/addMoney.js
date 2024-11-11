@@ -21,6 +21,7 @@ document.getElementById('add-money-button').addEventListener('click',function(ev
         const currAmount = document.getElementById('current-balance').innerText
         console.log(currAmount)
         //S-SIX    add user's current balance and the money to be added
+        
         console.log(parseFloat(toBeAddedAmount)+  parseFloat(currAmount))
         
         //S-SEVEN    set the summation in 'current-balance''s innerText
