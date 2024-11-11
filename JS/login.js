@@ -19,7 +19,7 @@ document.getElementById('login-button').addEventListener('click',function(event)
     if(phone=== '01820033756' && pin==='1116'){
         console.log('you are logged in')
         //step -5 adding onclick go to another html file
-        window.location.href = '/home.html'
+        window.location.href = './home.html'
     }
 
     else
