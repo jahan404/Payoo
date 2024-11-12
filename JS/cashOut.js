@@ -6,14 +6,14 @@ document.getElementById('cash-out-button').addEventListener('click',function(eve
     const cashOutPinNum =document.getElementById('cash-out-pin-num').value
     console.log(cashOutPinNum)
 
-    if(cashOutPinNum==='1116'){
+    if(cashOutPinNum ==='1116'){
         const currentBalance =document.getElementById('current-balance').innerText
         console.log(currentBalance)
 
         console.log(parseFloat(currentBalance)-parseFloat(cashOutAmount))
 
 
-        document.getElementById('current-main-balance').innerText = parseFloat(currentBalance) - parseFloat(cashOutAmount)
+        document.getElementById('current-balance').innerText = parseFloat(currentBalance) - parseFloat(cashOutAmount)
     }
 
     else

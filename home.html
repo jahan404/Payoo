@@ -12,10 +12,13 @@
 <body>
     <main class="flex justify-center">
 
-        <!-- cash in -->
-        <div class="hidden mockup-phone border-none">
+        
+        <div class="mockup-phone border-none">
             <div class="camera"></div>
             <div class="display">
+
+
+              <!-- nav bar -->
               <div class="artboard artboard-demo phone-1">
                 <button class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg my-5">
                     <div class="flex flex-col items-start">
@@ -24,14 +27,16 @@
                     </div>
                 </button>
                 <div>
-                    <button class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg">Add Money</button>
-                    <button class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg">Cash Out</button>
+                    <button id="add-money-button-features" class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg">Add Money</button>
+                    <button id="cash-out-button-features" class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg">Cash Out</button>
                 </div>
                  
                 <div class="divider"></div>
+                
 
+                <!-- cash in -->
                 <div>
-                    <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+                    <div id="add-money-form" class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
                         <form class="card-body">
                           <div class="form-control">
                             <label class="label">
@@ -52,30 +57,10 @@
                         </form>
                       </div>
                 </div>
-              </div>
-            </div>
-          </div>
 
-        <!-- cash Out -->
-        <div class="mockup-phone border-none">
-            <div class="camera"></div>
-            <div class="display">
-              <div class="artboard artboard-demo phone-1">
-                <button class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg my-5">
-                    <div class="flex flex-col items-start">
-                        <h1 id="current-main-balance" class="text-4xl">9000</h1>
-                    <p class="font-extralight text-gray-500">Available balance</p>
-                    </div>
-                </button>
+                <!-- cash Out -->
                 <div>
-                    <button class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg">Add Money</button>
-                    <button class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg">Cash Out</button>
-                </div>
-                 
-                <div class="divider"></div>
-
-                <div>
-                    <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+                    <div id="cash-out-form" class=" hidden card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
                         <form class="card-body">
                           <div class="form-control">
                             <label class="label">
@@ -103,6 +88,7 @@
 
           <script src="JS/addMoney.js"></script>
           <script src="JS/cashOut.js"></script>
+          <script src="JS/features.js"></script>
     </main>
 </body>
 </html>

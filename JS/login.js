@@ -16,7 +16,7 @@ document.getElementById('login-button').addEventListener('click',function(event)
 
     //step-4 validate phone and pin
 
-    if(phone=== '01820033756' && pin==='1116'){
+    if(phone === '01820033756' && pin==='1116'){
         console.log('you are logged in')
         //step -5 adding onclick go to another html file
         window.location.href = './home.html'
